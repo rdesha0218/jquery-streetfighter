@@ -25,27 +25,36 @@ $(document).ready(function() {
   	//ryu goes back to his ready position
   	$('.ryu-throwing').hide();
   	$('.ryu-ready').show();
-  });
-
-  $(document).keydown(function(e) {
-  if (e.keyCode == '88') {
-    console.log("X pressed");
-    $('ryu-ready').hide();
-    $('.ryu-cool').show();
   })
-  .keyup(function(e) {
-    if (e.keyCode = '88') {
-      console.log("X up");
-    $('ryu-cool').hide();
-    $('ryu-ready').show();
-  }
+ 
+$(document).keydown(function(key) {
+  if(key.which==88) {
+    console.log("X pressed");
+    $('.ryu-ready').hide();
+    $('.ryu-cool').show();
+  } 
 });
 
 });
+
 
 function playHadouken () {
 	$('#hadouken-sound')[0].volume = 0.5;
 	$('#hadouken-sound')[0].load();
 	$('#hadouken-sound')[0].play();
-}
+};
+
+/*
+ $(document).keydown(function(key) {
+    if(key.which==88) {
+    console.log("X pressed");
+    $('.ryu-ready').hide();
+    $('.ryu-cool').show();
+    } 
+  });.keyup(function(e) {
+    if (e.keyCode = '88') {
+      console.log("X up");
+    $('ryu-cool').hide();
+    $('ryu-ready').show();
+  */
 
