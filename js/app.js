@@ -1,4 +1,10 @@
 $(document).ready(function() {
+   $('.intro').fadeIn(2000, function() {
+    $(this).fadeOut(2000, function() {
+      $('.text').fadeIn(1000);
+   });
+ });
+  ////////////////////////////////////
     $('.ryu').mouseenter(function() {
     $('.ryu-still').hide();
     $('.ryu-ready').show();

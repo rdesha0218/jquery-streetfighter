@@ -1,20 +1,38 @@
-/* {
-	outline: red 1px solid;
-}
-*/
-
-.text {
-	color:blue;
-	/*display: ; */
-	font-size: 25px;
-    /*float: right;*/
-    height: 200px;
-    width: 300px;
-}
 body {
 	background: black;
 }
 
+.text {
+	display:none;
+	font-family: "Comic Sans MS", sans-serif;
+	color: blue;
+	font-size: 25px;
+    height: 200px;
+    width: 300px;
+   float: left;
+	position: absolute;
+	z-index: 10;
+    top: 140px;
+    left: 700px;
+}
+.intro {
+	display:none;
+	font-family: "Comic Sans MS", sans-serif;
+	color: black;
+	font-size: 25px;
+    height: 250px;
+    width: 400px;
+   float: left;
+	position: absolute;
+	z-index: 7;
+    top: 110px;
+    left: 700px;
+
+}
+.intro img {
+	height:40%;
+	width:60%;
+}
 .main {
 	background-color: white;
 	margin-top: 110px;
