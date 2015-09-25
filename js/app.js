@@ -1,7 +1,9 @@
 $(document).ready(function() {
    $('.intro').fadeIn(2000, function() {
     $(this).fadeOut(2000, function() {
-      $('.text').fadeIn(1000);
+      $('.text').fadeIn(2000,function() {
+        $(this).fadeOut(1000)
+      });
    });
  });
   ////////////////////////////////////
